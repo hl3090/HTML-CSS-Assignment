@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registeration Form</title>
+    <style>
+        h1{
+            background-color: blue;
+           width: auto;
+           color: red;
+           text-align: center;
+        }
+        h2{
+            width: 10px;
+            color: red;
+            text-align: left;
+        }
+        .container2 {
+            position: absolute;
+            width: 300px;
+            padding-top: 20px;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: left;
+            width: 10px;
+            margin: 5px;
+            color: red;
+        }
+    
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 5px;
+            
+        }
+        h2{
+            text-align: left;
+            width: auto;
+            color: red;
+        }
+        .container3{
+            position: bottom right;
+            width: 300px;
+            padding-top: 20px;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: left;
+            width: auto;
+            color: red;
+        }
+        .container{
+            text-align: left;
+            position: bottom;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .container4{
+            position: right bottom;
+            width: 200px;
+            margin-top: 70px;
+            padding-right: 40%;
+            right: 20;
+            bottom: 0;
+        }
+        .container5{
+            position: absolute;
+            width: 200px;
+            margin: 50px;
+            text-align: center;
+        }
+           
+    </style>
+</head>
+<body bgcolor="skyblue">
+    <h1>Individual Registration</h1>
+    <div class="container">
+        <form action="process.php" method="post">
+            <h2>User Particulars</h2>
+            <label for="name"><b>Login ID</b></label>
+            <input type="text" placeholder="Login ID" required>
+        
+            <label for="email"><b>Password</b></label>
+            <input type="email" placeholder="Enter Password" required>
+            <label for="email"><b>Confirm Password</b></label>
+            <input type="email" placeholder="Enter Confirm Password" required>
+        </form>
+    </div>
+    <div class="container2">
+        <form action="process.php" method="post">    
+            <h2>Personal Particulars</h2>
+            <label for="Salutation" ><b>Salutatiion</b></label>
+            <select name="Salutation" required>
+                <option value="" hidden="Select">Select</option>
+                <option value="male">Mr.</option>
+                <option value="female">Mrs.</option>
+            </select>
+            <label for="lname"><b>First Name</b></label>
+            <input type="text" placeholder="First Name" required>
+
+            <label for="fname"><b>Last Name</b></label>
+            <input type="text" placeholder="Last Name" required>
+
+            <label for="dob"><b>Date of Birth</b></label>
+            <input type="date" name="dob" required>
+        </form>
+    </div>
+    <div class="container3">    
+        <form action="process.php" method="post">
+            <h2>Contact Details</h2>
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="text" placeholder="Phone Number" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" required>
+
+            <label for="address"><b>Address</b></label>
+            <input type="text" placeholder="Address" required>
+        </form>
+    </div>
+    <div class="container4">
+        <form action="process.php" method="post">
+            <h2>Account Particulars</h2>
+            <label for="15 Digit Account">15 Digit Account No.</label>
+            <input type="text" placeholder="">
+            <label for="fund transfer">Fund transfer</label>
+            <select name="select" required>
+                <option value="" hidden="Select">Select</option>
+                <option value="Cash" placeholder="Cash">Cash</option>
+                <option value="online" placeholder="Online">Online</option>
+            </select>
+        </form> 
+    </div>    
+    <div class="container5">
+        <form action="process.php" method="post">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
